@@ -42,7 +42,7 @@ The attacker accessed `invoice.php` in the `/CRM/portal/uploads/` directory and 
 
 A second request to `invoice.php` contained another double Base64-encoded payload in the `q` parameter (`WW1GemFDQXRhU0ErSmlBdlpHVjJMM1JqY0M4eE1UVXVOVGd1TVRRNExqZzJMemd3T0RBZ01ENG1NUT09`).
 
-![bruteforce](screenshot/encoded commands.png)
+![bruteforce](screenshot/encodedcommands.png)
 
 ## Findings
 
@@ -76,7 +76,7 @@ A second request to `invoice.php` contained another double Base64-encoded payloa
 | Defense Evasion     | Obfuscated/Compressed Files and Information | T1027     |
 | Command and Control | Non-Application Layer Protocol              | T1095     |
 
-![bruteforce](screenshot/attacker logs.png)
+![bruteforce](screenshot/attackerlogs.png)
 
 ## Conclusion
 The investigation identified a brute-force attack that resulted in successful authentication, deployment of a PHP web shell, execution of encoded commands, and an attempted reverse shell. The attack sequence was reconstructed using HTTP access logs and decoded payloads.
