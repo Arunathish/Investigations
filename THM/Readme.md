@@ -1,4 +1,3 @@
-
 This investigation is based on the **Portal Drop** CTF from **First Shift** on **TryHackMe**.
 - Summary
 - Observation 
