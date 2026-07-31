@@ -25,7 +25,7 @@ Evidence
 - Response: HTTP 401 
 - User-Agent: PF-Scanner/1.0
 
-![bruteforce](screenshot/brute.png)
+![bruteforce](First shit/screenshots/brute.png)
 
 #### Time - 14:20:54
 
