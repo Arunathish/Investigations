@@ -6,19 +6,12 @@ The goal of this repository is to document my investigation process, evidence, f
 
 > Every investigation contains a summary, timeline reconstruction, technical findings, MITRE ATT&CK mapping, and the original investigation notes.
 
-## Repository Structure
-
-```text
-THM/
-├── Portal-Drop/
-├── ...
-```
 
 ## Investigation Index
 
 | Platform | Investigation | Topics |
 |----------|---------------|--------|
-| TryHackMe | [Portal Drop](THM/Portal-Drop/) | Brute Force, Web Shell, Reverse Shell, MITRE ATT&CK |
+| TryHackMe | [FirstShift](THM) | Brute Force, Web Shell, Reverse Shell, MITRE ATT&CK |
 
 ## Skills Demonstrated
 
@@ -31,7 +24,6 @@ THM/
 - Base64 Payload Analysis
 - Reverse Shell Analysis
 
-## Future Investigations
 
 - Malware Analysis
 - Phishing Investigation
