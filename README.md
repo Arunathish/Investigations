@@ -17,17 +17,16 @@ The goal of this repository is to document my investigation process, evidence, f
 
 - Incident Investigation
 - Log Analysis
+- Malware Analysis
+- Phishing Investigation
+- Windows Event Log Analysis
+- Network Traffic Analysis
+- Memory Forensics
+- Threat Hunting 
+
 - Timeline Reconstruction
 - IOC Identification
 - MITRE ATT&CK Mapping
 - Web Shell Analysis
 - Base64 Payload Analysis
 - Reverse Shell Analysis
-
-
-- Malware Analysis
-- Phishing Investigation
-- Windows Event Log Analysis
-- Network Traffic Analysis
-- Memory Forensics
-- Threat Hunting
