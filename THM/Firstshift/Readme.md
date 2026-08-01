@@ -31,7 +31,7 @@ Evidence
 
 A successful authentication was observed from the same IP (`34.67.91.83`), followed by `HTTP 200 OK` responses for authenticated resources.
 
-![bruteforce](Firstshift/screenshots/successful.png)
+![bruteforce](/screenshots/successful.png)
 
 #### Time - 14:27:34
 
