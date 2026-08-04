@@ -1,4 +1,4 @@
-This investigation is based on the **Portal Drop** CTF from **First Shift** on **TryHackMe**. Raw investigation is on [investigation](investigation.md)
+This investigation is based on the **Portal Drop** CTF from **First Shift** on **TryHackMe**. Raw investigation is on [Investigation.md](investigation.md)
 - Summary
 - Observation 
 - Findings
