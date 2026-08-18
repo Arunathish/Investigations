@@ -21,7 +21,7 @@ A `.docx` file is basically a ZIP archive, so I used `zipdump.py` to inspect the
 python3 zipdump.py /root/Desktop/ChallengeFiles/Employees_Contact_Audit_Oct_2021.docx
 ```
 
-![[Letsdefend/Document analysis/Screenshots/1.png]]
+![Document analysis](screenshots/1.png)
 
 Instead of manually checking each stream, I used the `-D` option to dump all the contents and piped the output into `re-search.py`.
 
@@ -31,7 +31,7 @@ I was specifically looking for IPv4 addresses.
 python3 zipdump.py -D /root/Desktop/ChallengeFiles/Employees_Contact_Audit_Oct_2021.docx | python3 re-search.py -n -u ipv4
 ```
 
-![[Letsdefend/Document analysis/Screenshots/2.png]]
+![Document analysis](screenshots/2.png)
 
 This returned an IP address from inside the document. Then i checked the IP reputation in the virus total.
 
@@ -47,7 +47,7 @@ The standard URL filters did not give me the result I was looking for, so I chan
 python3 zipdump.py -D /root/Desktop/ChallengeFiles/Employee_W2_Form.docx | python3 re-search.py -u -n domaintld
 ```
 
-![[Letsdefend/Document analysis/Screenshots/3.png]]
+![Document analysis](screenshots/3.png)
 
 ## 3. Work_From_Home_Survey.doc
 
@@ -59,7 +59,7 @@ I started with the same approach and searched the dumped content for domains.
 python3 zipdump.py -D /root/Desktop/ChallengeFiles/Work_From_Home_Survey.doc | python3 re-search.py -n -u domaintld
 ```
 
-![[Letsdefend/Document analysis/Screenshots/4.png]]
+![Document analysis](screenshots/4.png)
 
 but it wasn't enough to identify the actual malicious domain.
 
@@ -71,7 +71,7 @@ I checked the document structure and focused on stream 10.
 python3 zipdump.py /root/Desktop/ChallengeFiles/Work_From_Home_Survey.doc -s 10 -d
 ```
 
-![[Letsdefend/Document analysis/Screenshots/5.png]]
+![Document analysis](screenshots/5.png)
 
 The output contained a large amount of data.
 
@@ -83,11 +83,11 @@ Instead of manually decoding it, I used `numbers-to-string.py`
 python3 zipdump.py /root/Desktop/ChallengeFiles/Work_From_Home_Survey.doc -s 10 -d | python3 numbers-to-string.py
 ```
 
-![[Letsdefend/Document analysis/Screenshots/6.png]]
+![Document analysis](screenshots/6.png)
 
 Another way to decode this is using cyberchef and use the "From HTML Entity"
 
-![[Letsdefend/Document analysis/Screenshots/7.png]]
+![Document analysis](screenshots/7.png)
 
 This exposed the malicious domain contained within the document.
 
@@ -116,7 +116,7 @@ sha256sum *
 
 This returned the SHA-256 value for each file in the `ChallengeFiles` directory.
 
-![[Letsdefend/Document analysis/Screenshots/8.png]]
+![Document analysis](screenshots/8.png)
 
 ## 6. Finding the vulnerability
 
@@ -126,7 +126,7 @@ After checking the samples on VirusTotal, I noticed that the malicious documents
 CVE-2021-40444
 ```
 
-![[Letsdefend/Document analysis/Screenshots/9.png]]
+![Document analysis](screenshots/9.png)
 
 ## Tools used
 
