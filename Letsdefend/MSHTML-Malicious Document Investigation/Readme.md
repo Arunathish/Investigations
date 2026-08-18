@@ -137,4 +137,4 @@ The tools that I have used to analyze the document was Didier Stevens tools
 
 Then 
 - `sha256sum`
-- VirusTotal
+- `VirusTotal`
