@@ -16,7 +16,7 @@ The files were:
 First, I checked the structure of the `.docx` file using `zipdump.py`
 A `.docx` file is basically a ZIP archive, so I used `zipdump.py` to inspect the contents.
 
-python3 zipdump.py /root/Desktop/ChallengeFiles/Employees_Contact_Audit_Oct_2021.docx
+  python3 zipdump.py /root/Desktop/ChallengeFiles/Employees_Contact_Audit_Oct_2021.docx
 
 ![[Letsdefend/Document analysis/Screenshots/1.png]]
 
@@ -24,7 +24,7 @@ Instead of manually checking each stream, I used the `-D` option to dump all the
 
 I was specifically looking for IPv4 addresses.
 
-python3 zipdump.py -D /root/Desktop/ChallengeFiles/Employees_Contact_Audit_Oct_2021.docx | python3 re-search.py -n -u ipv4
+  python3 zipdump.py -D /root/Desktop/ChallengeFiles/Employees_Contact_Audit_Oct_2021.docx | python3 re-search.py -n -u ipv4
 
 ![[Letsdefend/Document analysis/Screenshots/2.png]]
 
@@ -38,7 +38,7 @@ I initially looked at the available URL/domain filters in `re-search.py`.
 
 The standard URL filters did not give me the result I was looking for, so I changed the approach and used the `domaintld` filter.
 
-python3 zipdump.py -D /root/Desktop/ChallengeFiles/Employee_W2_Form.docx | python3 re-search.py -u -n domaintld
+  python3 zipdump.py -D /root/Desktop/ChallengeFiles/Employee_W2_Form.docx | python3 re-search.py -u -n domaintld
 
 ![[Letsdefend/Document analysis/Screenshots/3.png]]
 
