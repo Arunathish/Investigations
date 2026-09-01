@@ -2,9 +2,9 @@
 
 ## 🚧 Ongoing
 
-#### I’m gradually uploading my previous cybersecurity investigations to this repository.
+> #### I’m gradually uploading my previous cybersecurity investigations to this repository.
 
-#### I’ll continue adding new investigations, analysis, and detection engineering work as I build and improve my research portfolio.
+> #### I’ll continue adding new investigations, analysis, and detection engineering work as I build and improve my research portfolio.
 
 A collection of my cybersecurity investigations from CTFs, SOC labs, malware analysis, log analysis, and real-world inspired scenarios.
 
