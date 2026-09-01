@@ -11,7 +11,7 @@ The goal of this repository is to document my investigation process, evidence, f
 
 | Platform | Investigation | Topics |
 |----------|---------------|--------|
-| TryHackMe | [THM/Firstshift](THM) | Brute Force, Web Shell, Reverse Shell, MITRE ATT&CK |
+| TryHackMe | [Firstshift](THM/Firstshift) | Brute Force, Web Shell, Reverse Shell, MITRE ATT&CK |
 
 ## Skills Demonstrated
 
