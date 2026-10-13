@@ -45,11 +45,11 @@ Notes: scan ran ~449s, host is up. Large number of filtered/closed ports. HTTP o
 
 ## Initial web interaction
 
-![image.png](img1.png)
+![image.png](source/img1.png)
 
 1. Registered a normal user account on the website (used to interact with UI features).
 
-![image.png](img2.png)
+![image.png](source/img2.png)
 
 1. The web app exposes a **Report Bug** feature; submitted bug reports are visible to admins and the app responds with `"Bug report submitted. Admin review in progress"`.
 
@@ -75,7 +75,7 @@ After an admin opens the report, the admin cookie can be captured by the attacke
 
 With the admin cookie, I authenticated as the admin session and used the administrative features. One available action allowed downloading an application/system log. Intercepting that download revealed an LFI opportunity (the download mechanism returned arbitrary files when a specific path was provided).
 
-![image.png](img3.png)
+![image.png](source/img3.png)
 
 ### LFI
 
