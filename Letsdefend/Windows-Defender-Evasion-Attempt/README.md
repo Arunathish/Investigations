@@ -207,9 +207,9 @@ Both are classic attacker cleanup moves — disrupt logging and muddy the forens
 
 **True Positive — confirmed compromise.**
 
-The attacker obtained valid RDP credentials via brute-force, gained full interactive access, ran a complete recon pass (user/privilege, accounts, network, shares, services, security posture) and then deliberately tested a fileless LOLBIN execution technique (`rundll32.exe` + `mshtml.dll` → `calc.exe`) twice — once plain, once obfuscated — to probe whether application control and Defender would stop it. No malware was ever dropped to disk; this reads as **capability testing** ahead of further exploitation, followed by anti-forensic cleanup (log service stop + system time change).
+- The attacker gained access through RDP using brute-forced credentials.
+- They checked users, privileges, accounts, network connections, shared folders, running services, and security settings.
+- They tested a fileless execution technique using `rundll32.exe` and `mshtml.dll` to launch `calc.exe`, both normally and with obfuscation.
+- No malware was saved to disk. The activity appears to be testing security detection and execution capabilities.
+- Finally, they stopped a logging service and changed the system time, possibly to hide their activities.
 
----
-
-
-*Don't Share*
