@@ -45,7 +45,7 @@ A `.xlsm` is a macro-enabled Excel workbook, the `m` in the extension is the tel
 
 Checked the host record for **Sofia** to understand what it was and who used it.
 
-`Hostname:     Sofia`
+`Hostname: Sofia`
 
 `Domain: LetsDefend`
 
@@ -70,7 +70,10 @@ Pulled the terminal history for the host to see if the user had interacted with 
 2020-10-18 22:17   PowerSheLL -ENCOD IAAgAHMAZQB0ACoASQBUAEUATQAgAHYAYQByAGkAQQBCAEwAZQA6AGsAegBlAgIAFEAbABVACAAIAAoAFsAdABZAFAAZQBd...
 ```
 
-That third line stood out. It's PowerShell with a mixed-case binary name (`PowerSheLL`) and a Base64-encoded command via `-ENCOD` (`-EncodedCommand`). Mixed-case `powershell.exe` plus encoded payloads is a known technique to dodge simple string-matching logging/AMSI detections. This told me the macro wasn't just dropping a file — it was executing PowerShell on the endpoint.
+That third line stood out. 
+It's PowerShell with a mixed-case binary name (`PowerSheLL`) and a Base64-encoded command via `-ENCOD` (`-EncodedCommand`). 
+Mixed-case `powershell.exe` plus encoded payloads is a known technique to dodge simple string-matching logging/AMSI detections. 
+This told me the macro wasn't just dropping a file — it was executing PowerShell on the endpoint.
 
 ---
 
