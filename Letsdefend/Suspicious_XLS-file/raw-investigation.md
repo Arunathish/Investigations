@@ -62,11 +62,11 @@ process tree
 
 ```
 WinRAR.exe  C:\Users\admin\AppData\Local\Temp\7ccf88c0bbe3b29bf19d877c4596a8d4.zip
- └─ EXCEL.EXE  "...\7zSrBD4640.36109\ORDER SHEET & SPEC.xlsm"
-     └─ DWWIN.EXE
+ EXCEL.EXE  "...\7zSrBD4640.36109\ORDER SHEET & SPEC.xlsm"
+  DWWIN.EXE
 
 EXCEL.EXE  "C:\Users\admin\Desktop\ORDER SHEET & SPEC.xlsm"
- └─ DWWIN.EXE
+ DWWIN.EXE
 ```
 
 `EXCEL.EXE `spawning `DWWIN.EXE` (Dr. Watson) = crash handler firing - consistent with CVE-2017-11882 exploitation crashing EQNEDT32.EXE/WinWord-Excel after shellcode runs
