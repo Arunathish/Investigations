@@ -42,8 +42,6 @@ mixed-case `PowerSheLL` + base64 `-ENCOD` - AMSI/logging evasion pattern
 
 VirusTotal - hash lookup (sha256: `7bcd31bd41686c32663c7cabf42b18c50399e3b3b4533fc2ff002d9f2e058813`)
 
-44/62 vendors flagged malicious
-
 popular threat label - trojan.acao/docdl
 
 family labels - acao, docdl, valyria
