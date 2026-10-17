@@ -45,7 +45,7 @@ A `.xlsm` is a macro-enabled Excel workbook, the `m` in the extension is the tel
 
 Checked the host record for **Sofia** to understand what it was and who used it.
 
-`Hostname:     Sofia\n`
+`Hostname:     Sofia`
 `Domain:       LetsDefend`
 
 `IP Address:   172.16.17.56`
