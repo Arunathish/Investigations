@@ -244,7 +244,7 @@ Attempt to Remove Evidence
 -  executed `linper.sh`.
 -  password hashes from `/etc/shadow`.
 - `credit-cards-25-blackfriday.db`
-- `192.168.72.131`.
+- `192.168.72.131`
 
 
 ## MITRE ATT&CK Mapping
