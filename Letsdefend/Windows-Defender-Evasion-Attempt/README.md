@@ -29,7 +29,7 @@ This is the investigation of a **Windows Defender Evasion** alert raised during 
 | Triggered Command | `rundll32 vbscript:"\..\mshtml\..\LoL45\..\mshtml,RunHTMLApplication "+String(CreateObject("Wscript.Shell").Run("calc.exe"),0)` |
 
 
-## 1. Trigger Reason
+## 1. Trigger Reason:
 
 
 `rundll32.exe` combined with `vbscript:` is a well-known attaker technique "LOLBIN" for fileless execution and application-control/EDR bypass often used to bypass endpoint detection and application control mechanisms. This combination alone is enough to fire defense-evasion detections and this behavior commonly triggers security alerts due to its association with **defense evasion and fileless execution**.
@@ -47,7 +47,7 @@ This is the investigation of a **Windows Defender Evasion** alert raised during 
 - **Target Username:** LetsDefend
 ---
 
-## 2. RDP Time-line
+## 2. RDP Time-line:
 
 On **Sep 12, 2024, 07:04 AM**, RDP brute-force activity began against `172.16.17.126` (Elenora), targeting the `LetsDefend` account.
 
@@ -65,7 +65,7 @@ This confirms the attacker obtained **valid interactive access** to a Windows 10
 
 ---
 
-## 3. Post-Compromise Recon
+## 3. Post-Compromise Recon:
 
 Immediately after login, the attacker began executing series of series of commands as it seen as scripted-looking but manually-paced sequence of recon commands over cmd/PowerShell:
 
@@ -89,7 +89,7 @@ Commands Executed by  the attacker with the timeline:
 
 ---
 
-## 4. LOLBIN Execution
+## 4. LOLBIN Execution:
 
 With recon done, the attacker tested fileless execution:
 
@@ -109,7 +109,7 @@ Here the attacker use the calc.exe as the proof of execution to check where the 
 
 ---
 
-## 5. Process Creation Evidence 
+## 5. Process Creation Evidence: 
 
 ![image7](source/07.png)
 
@@ -166,7 +166,7 @@ This is Disk Cleanup's own normal `/autoclean` behavior and is called out here o
 
 ---
 
-## 7. Windows Defender Status & Detection
+## 7. Windows Defender Status & Detection:
 
 Post-incident checks confirmed Windows Defender was active the whole time:
 
@@ -177,7 +177,7 @@ Despite the alert's own "EDR/AV Action: Not Detected" field, running `Get-MpThre
 
 ---
 
-## 8. Evidence Clearance
+## 8. Evidence Clearance:
 
 At **07:11:15 AM**, two events logged back-to-back:
 
@@ -188,7 +188,7 @@ Both are classic attacker cleanup moves — disrupt logging and muddy the forens
 
 ---
 
-# Attack Timeline
+# Attack Timeline:
 
 1. **07:04 AM** — RDP brute-force starts, `89.187.177.73` → `172.16.17.126` (Elenora).
 2. **07:04–07:07 AM** — 10 failed RDP logons (`4625`, bad password / good username).
@@ -203,7 +203,7 @@ Both are classic attacker cleanup moves — disrupt logging and muddy the forens
 
 ---
 
-# Conclusion
+# Conclusion:
 
 **True Positive — confirmed compromise.**
 
