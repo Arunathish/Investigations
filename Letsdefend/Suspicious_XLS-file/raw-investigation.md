@@ -79,4 +79,4 @@ threat indicator selected - "Unknown or unexpected outgoing internet traffic"
 
 containment toggled on for Sofia endpoint
 
-case closed - malicious, contained
+case closed - malicious, contained.
