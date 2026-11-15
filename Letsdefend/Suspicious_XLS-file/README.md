@@ -164,7 +164,7 @@ Containment was enabled on the **Sofia** endpoint to isolate it from the network
 
 ---
 
-## Tools Used
+## Tools Used:
 
 - LetsDefend SIEM (alert detail, endpoint terminal history, containment)
 - VirusTotal (hash lookup, vendor detections, code insights)
