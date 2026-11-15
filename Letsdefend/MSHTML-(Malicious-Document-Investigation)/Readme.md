@@ -12,7 +12,7 @@ The files were:
 - `Employee_W2_Form.docx`
 - `Work_From_Home_Survey.doc`
 - `income_tax_and_benefit_return_2021.docx`
-## 1. Employees_Contact_Audit_Oct_2021.docx
+## 1. Employees_Contact_Audit_Oct_2021.docx :-
 
 First, I checked the structure of the `.docx` file using `zipdump.py`
 A `.docx` file is basically a ZIP archive, so I used `zipdump.py` to inspect the contents.
