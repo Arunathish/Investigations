@@ -2,6 +2,6 @@
 
 
 
-`STILL IN PROGRESS`
+`IN PROGRESS`
 
 ---
