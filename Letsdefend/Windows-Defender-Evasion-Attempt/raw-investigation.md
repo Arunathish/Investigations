@@ -104,8 +104,10 @@ Get-MpThreatDetection run - confirms Defender DID catch the activity
 detection time - 07:09:22 AM (same time as first rundll32 execution)
 
 
-anti-forensic activity after - 07:11:15 AM
+anti-forensic activity after - 07:11:15 AM.
 
 `The event logging service has shutdown`
 `The system time was changed`
+
+
 
